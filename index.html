@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="logo">
+        <i class="fa fa-bars icon--dash" aria-hidden="true" ></i>
+        <ul style="list-style-type:none" class="dropdown--menu shadow">
+            <li class="a">Dashboard</li>
+            <li class="a">Profile</li>
+            <li class="a">Statistics</li>
+            <li class="a">Careers</li>
+            <li class="a">Faq</li>
+            <li class="a">Testmonials</li>
+            <li class="a">Settings</li>
+            <li class="a">Logout</li>
+        </ul>
+    </nav>
+    <div class="main--body">
+    <div class="sidebar">
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    <span>Carrers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>Testmonials</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h4>Dashboard</h4>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa fa-search" aria-hidden="true" style="color:cadetblue;"></i>
+                    <input type="text" name="text" placeholder="search" autofocus>
+                </div>
+                <img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=1024x1024&w=is&k=20&c=fRiq_aLd5eX7bjr9Y0umM-b0kIxYDewARvO_9Ykqayc="
+                    alt="logo">
+            </div>
+        </div>
+        <div class="card--contain">
+            <h5 class="main--title "> Today's Data</h5>
+            <div class="card--wrapper">
+                <div class="payment--card light-red">
+                    <div class="card-head">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Amount
+                            </span>
+                            <span class="amount-value">
+                                $500
+                            </span>
+                        </div>
+                        <i class="fa fa-usd icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="card--detail ">**** **** **** 3452</span>
+                </div>
+                <div class="payment--card light-purple">
+                    <div class="card-head">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Order
+                            </span>
+                            <span class="amount-value">
+                                $500
+                            </span>
+                        </div>
+                        <i class="fa fa-list-ul dark-purple icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="card--detail ">**** **** **** 6346</span>
+                </div>
+                <div class="payment--card light-green">
+                    <div class="card-head">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Customer
+                            </span>
+                            <span class="amount-value">
+                                $500
+                            </span>
+                        </div>
+                        <i class="fa fa-user-circle-o dark-green icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="card--detail ">**** **** **** 3478</span>
+                </div>
+                <div class="payment--card light-blue">
+                    <div class="card-head">
+                        <div class="amount">
+                            <span class="title">
+                                Payment Proceed
+                            </span>
+                            <span class="amount-value">
+                                $500
+                            </span>
+                        </div>
+                        <i class="fa fa-usd icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="card--detail ">**** **** **** 2347</span>
+                </div>
+            </div>
+        </div>
+        <div class="table--contain my-3">
+            <h5 class="finance--title">Finance Data</h5>
+            <table class="table table-hover table-striped">
+                <tr class="bg-info text-light">
+                    <th>Date</th>
+                    <th>Transaction</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>2023-05-01</td>
+                    <td>Expenses</td>
+                    <td>Office-Supplies</td>
+                    <td>$250</td>
+                    <td>Office-Expenses</td>
+                    <td>Pending</td>
+                    <td>Edit</td>
+                </tr>
+                <tr>
+                    <td>2023-05-02</td>
+                    <td>Income</td>
+                    <td>Client Payment</td>
+                    <td>$500</td>
+                    <td>sales</td>
+                    <td>Completed</td>
+                    <td>Edit</td>
+                </tr>
+                <tr>
+                    <td>2023-05-03</td>
+                    <td>Expense</td>
+                    <td>Travel Expense</td>
+                    <td>$250</td>
+                    <td>Office-Expenses</td>
+                    <td>Pending</td>
+                    <td>Edit</td>
+                </tr>
+                <tr>
+                    <td>2023-05-04</td>
+                    <td>Expense</td>
+                    <td>Marketing Campaing</td>
+                    <td>$300</td>
+                    <td>Marketing</td>
+                    <td>Approved</td>
+                    <td>Edit</td>
+                </tr>
+                <tr rowspan="7" class="bg-info text-light">
+                    <td class="fs-5">Total : $1300</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="card col-m-12 p-3 my-3 table--cards">
+            <h5 class="main--title">Today's Data</h5>
+            <div class="card-body d-flex flex-wrap justify-content-between align-items-center rounded-3 shadow-lg p-3 simple--card">
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li>Date</li>
+                        <li>Transaction Type</li>
+                        <li>Description</li>
+                        <li>Amount</li>
+                        <li>Category</li>
+                        <li>Status</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;color: blue;">
+                        <li>25-05-01</li>
+                        <li>Expenses</li>
+                        <li>Office Supplies</li>
+                        <li>$250</li>
+                        <li>Office Expenses</li>
+                        <li>Pending</li>
+                        <li>Edit</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body d-flex flex-wrap justify-content-between rounded-5 shadow p-3 my-3 simple--card">
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li>Date</li>
+                        <li>Transaction Type</li>
+                        <li>Description</li>
+                        <li>Amount</li>
+                        <li>Category</li>
+                        <li>Status</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;color: blue">
+                        <li>25-05-02</li>
+                        <li>Income</li>
+                        <li>Client Payment</li>
+                        <li>$500</li>
+                        <li>Sales</li>
+                        <li>Pending</li>
+                        <li>Edit</li>
+                </div>
+            </div>
+            <div class="card-body d-flex flex-wrap justify-content-between rounded-5 shadow p-3 my-3 simple--card">
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li>Date</li>
+                        <li>Transaction Type</li>
+                        <li>Description</li>
+                        <li>Amount</li>
+                        <li>Category</li>
+                        <li>Status</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;color: blue">
+                        <li>25-05-03</li>
+                        <li>Expense</li>
+                        <li>Travel Expense</li>
+                        <li>$250</li>
+                        <li>Travel</li>
+                        <li>Pending</li>
+                        <li>Edit</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body d-flex flex-wrap justify-content-between rounded-5 shadow p-3 my-3 simple--card">
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li>Date</li>
+                        <li>Transaction Type</li>
+                        <li>Description</li>
+                        <li>Amount</li>
+                        <li>Category</li>
+                        <li>Status</li>
+                        <li>Action</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;color: blue">
+                        <li>25-05-04</li>
+                        <li>Expense</li>
+                        <li>Marketing Campaing</li>
+                        <li>$250</li>
+                        <li>Marketing</li>
+                        <li>Approved</li>
+                        <li>Edit</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="count--total shadow my-1">
+                <p>Total : $1300</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

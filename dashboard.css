@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main--body {
+    display: flex;
+    height: 100vh;
+}
+
+/***** side bar content *****/
+
+.sidebar {
+    width: 70px;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 235px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.menu li {
+    padding: 0.8rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover {
+    background-color: #e0e0e058;
+}
+
+/* .active{
+    background-color: aquamarine;
+    width:40px;
+} */
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/******* main body search bar content *******/
+
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: calc(100% -70px);
+    padding: 1rem;
+    overflow: auto;
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: block;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.search--box {
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.search--box input {
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+
+}
+
+.search--box i {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.search--box i:hover {
+    transform: scale(1.2);
+}
+
+/*** card container content ***/
+.card--contain {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.main--title {
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 5px;
+}
+
+.payment--card {
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 270px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.payment--card:hover {
+    transform: translateY(-6px);
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.amount {
+    display: felx;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.amount-value {
+    font-size: 20px;
+    display: block;
+    font-family: "courier New", Courier, monospace;
+    font-weight: 600;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 1.3rem;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    font-weight: 900;
+}
+
+.card--detail {
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+
+/* color css */
+
+.light-red {
+    background-color: rgb(251, 233, 233);
+}
+
+.light-purple {
+    background-color: rgb(254, 226, 254);
+}
+
+.light-green {
+    background-color: rgb(234, 254, 235);
+}
+
+.light-blue {
+    background-color: rgb(236, 236, 254);
+}
+
+.dark-red {
+    background: red;
+}
+
+.dark-purple {
+    background: purple;
+}
+
+.dark-green {
+    background: green;
+}
+
+.dark-blue {
+    background: blue;
+}
+
+/****** table content ******/
+.table--contain {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.finance--title {
+    color: rgba(113, 99, 186, 255);
+}
+
+
+.tr-header {
+    background: rgba(113, 99, 186, 255);
+    color: #fff;
+}
+
+/* table cards */
+.table--cards {
+    display: none;
+}
+
+.count--total {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* drop down */
+
+.logo {
+    height: 60px;
+    padding: 16px;
+    display: none;
+    background: rgba(113, 99, 186, 255);
+    border-radius: 10px;
+    position: relative;
+}
+
+.dropdown--menu {
+    display: none;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    top: 50px;
+    width: 95%;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+    row-gap: 10px;
+    color: blue;
+}
+
+.icon--dash {
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+.logo:hover .dropdown--menu {
+    display: block;
+    cursor: pointer;
+}
+
+.a {
+    margin-top: 8px;
+    border-bottom: 1px solid rgb(197, 192, 192)
+}
+
+
+@media screen and (max-width:880px) {
+
+    .payment--card {
+        width: 100%;
+    }
+
+    .card--contain {
+        overflow: auto;
+        height: 300px;
+
+    }
+
+    .table--contain {
+        display: none;
+    }
+
+    .table--cards {
+        display: block;
+    }
+
+    .simple--card:hover {
+        transition: all 0.5s;
+        background-color: rgb(241, 253, 253);
+        transform: translateY(20px);
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .search--box i {
+        display: none;
+        background: none;
+    }
+
+}
