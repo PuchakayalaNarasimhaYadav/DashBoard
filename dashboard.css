@@ -79,17 +79,21 @@
 .main--content {
     position: relative;
     background: #ebe9e9;
-    width: calc(100% -70px);
+    width:100%;
     padding: 1rem;
     overflow: auto;
 }
+.main--content::-webkit-scrollbar{
+    display: none;
+}
 
-.header--wrapper img {
+img {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .header--wrapper {
@@ -130,7 +134,6 @@
     text-align: center;
 
 }
-
 .search--box i {
     cursor: pointer;
     transition: all 0.5s;
@@ -149,11 +152,10 @@
 
 .card--wrapper {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     gap: 0.8rem;
 }
-
 .main--title {
     color: rgba(113, 99, 186, 255);
     padding-bottom: 5px;
@@ -288,7 +290,6 @@
     padding: 16px;
     display: none;
     background: rgba(113, 99, 186, 255);
-    border-radius: 10px;
     position: relative;
 }
 
@@ -325,6 +326,9 @@
 
 
 @media screen and (max-width:880px) {
+    .main--title::-webkit-scrollbar{
+        display: none;
+    }
 
     .payment--card {
         width: 100%;
@@ -333,7 +337,6 @@
     .card--contain {
         overflow: auto;
         height: 300px;
-
     }
 
     .table--contain {
@@ -358,16 +361,25 @@
     .logo {
         display: block;
     }
-
     .sidebar {
         display: none;
     }
+    .card--wrapper{
+        flex-direction: column;
+    }
+    .main--content::-webkit-scrollbar{
+        display: none;
+    }
 }
-
 @media screen and (max-width:480px) {
     .search--box i {
         display: none;
         background: none;
     }
 
+}
+@media (max-width:1080px){
+    .main--content ::-webkit-scrollbar{
+        display: none;
+    }
 }
